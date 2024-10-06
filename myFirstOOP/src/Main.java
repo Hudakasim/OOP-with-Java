@@ -16,13 +16,21 @@ public class Main {
 //        System.out.println("W = " + r2.getwidth());
 //        System.out.println("the area = "+r2.getarea());
 
-        Car c1;
-        c1 = new Car();
-        Car c2 = new Car("mercedes", 2020);
+//        Car c1;
+//        c1 = new Car();
+//        Car c2 = new Car("mercedes", 2020);
+//
+//
+//        System.out.println(c1.getmaker()+"  "+c1.getmodel());
+//        System.out.println(c2.getmaker()+"  "+c2.getmodel());
 
+        Car c1 = new Car();
+        Car c2 = new Car();
+        Car c3 = new Car();
+        Car c4 = new Car();
+        Car c5 = new Car();
 
-        System.out.println(c1.getmaker()+"  "+c1.getmodel());
-        System.out.println(c2.getmaker()+"  "+c2.getmodel());
-
+        // System.out.println(c3.getnoOfObj());
+        System.out.println(Car.getnoOfObj());
     }
 }
