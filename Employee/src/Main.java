@@ -10,6 +10,5 @@ public class Main {
         System.out.println("***********After setSalary with 2 parameters**********");
         E2.setSalary(5000,700);
         E2.printEmpData();
-
     }
 }
