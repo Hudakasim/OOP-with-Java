@@ -1,12 +1,12 @@
 public class Employee extends Person{
-    private double salary;
-    private int rank;
+    double salary;
+    private String rank;
     private String job;
 
     public Employee(){
 
     }
-    public Employee(String name, int age, String address, String nationality, double salary, int rank, String job){
+    public Employee(String name, int age, String address, String nationality, double salary,String rank, String job){
         super(name, age, address, nationality);
         this.salary = salary;
         this.rank = rank;
@@ -16,7 +16,7 @@ public class Employee extends Person{
     public void setSalary(double salary){
         this.salary = salary;
     }
-    public void setRank(int rank){
+    public void setRank(String rank){
         this.rank = rank;
     }
     public void setJob(String job){
@@ -26,10 +26,19 @@ public class Employee extends Person{
     public double getSalary(){
         return salary;
     }
-    public int getRank(){
+    public String getRank(){
         return rank;
     }
     public String getJob(){
         return job;
+    }
+
+    // add to the other method in the super class
+    @Override
+    public void printAllInfo(){
+        super.printAllInfo();
+        System.out.println("Salary: " + salary);
+        System.out.println("Rank: " + rank);
+        System.out.println("Job: " + job);
     }
 }
